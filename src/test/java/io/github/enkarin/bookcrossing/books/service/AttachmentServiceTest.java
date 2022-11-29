@@ -1,6 +1,6 @@
 package io.github.enkarin.bookcrossing.books.service;
 
-import io.github.enkarin.bookcrossing.base.BookCrossingBaseTests;
+import io.github.enkarin.bookcrossing.base.BookCrossingBaseTest;
 import io.github.enkarin.bookcrossing.books.dto.AttachmentMultipartDto;
 import io.github.enkarin.bookcrossing.books.dto.BookModelDto;
 import io.github.enkarin.bookcrossing.exception.AttachmentNotFoundException;
@@ -28,7 +28,7 @@ import java.util.stream.Stream;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
-class AttachmentServiceTest extends BookCrossingBaseTests {
+class AttachmentServiceTest extends BookCrossingBaseTest {
 
     @Autowired
     private BookService bookService;

@@ -1,6 +1,6 @@
 package io.github.enkarin.bookcrossing.security.jwt;
 
-import io.github.enkarin.bookcrossing.base.BookCrossingBaseTests;
+import io.github.enkarin.bookcrossing.base.BookCrossingBaseTest;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,7 +10,7 @@ import org.springframework.boot.test.system.OutputCaptureExtension;
 import static org.assertj.core.api.Assertions.assertThat;
 
 @ExtendWith(OutputCaptureExtension.class)
-class JwtProviderTest extends BookCrossingBaseTests {
+class JwtProviderTest extends BookCrossingBaseTest {
 
     @Autowired
     private JwtProvider provider;

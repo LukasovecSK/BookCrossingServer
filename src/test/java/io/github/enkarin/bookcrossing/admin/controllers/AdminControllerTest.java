@@ -3,7 +3,7 @@ package io.github.enkarin.bookcrossing.admin.controllers;
 import io.github.enkarin.bookcrossing.admin.dto.InfoUsersDto;
 import io.github.enkarin.bookcrossing.admin.dto.LockedUserDto;
 import io.github.enkarin.bookcrossing.admin.service.AdminService;
-import io.github.enkarin.bookcrossing.base.BookCrossingBaseTests;
+import io.github.enkarin.bookcrossing.base.BookCrossingBaseTest;
 import io.github.enkarin.bookcrossing.support.TestDataProvider;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +14,7 @@ import javax.annotation.Nonnull;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-class AdminControllerTest extends BookCrossingBaseTests {
+class AdminControllerTest extends BookCrossingBaseTest {
 
     @Autowired
     private AdminService adminService;

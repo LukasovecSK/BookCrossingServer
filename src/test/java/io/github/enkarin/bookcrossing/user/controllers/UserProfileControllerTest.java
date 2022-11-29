@@ -1,6 +1,6 @@
 package io.github.enkarin.bookcrossing.user.controllers;
 
-import io.github.enkarin.bookcrossing.base.BookCrossingBaseTests;
+import io.github.enkarin.bookcrossing.base.BookCrossingBaseTest;
 import io.github.enkarin.bookcrossing.support.TestDataProvider;
 import io.github.enkarin.bookcrossing.user.dto.UserProfileDto;
 import io.github.enkarin.bookcrossing.user.dto.UserPublicProfileDto;
@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-class UserProfileControllerTest extends BookCrossingBaseTests {
+class UserProfileControllerTest extends BookCrossingBaseTest {
 
     @Test
     void getMyProfileShouldWork() {

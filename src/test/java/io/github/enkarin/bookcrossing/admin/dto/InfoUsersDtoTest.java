@@ -1,12 +1,12 @@
 package io.github.enkarin.bookcrossing.admin.dto;
 
-import io.github.enkarin.bookcrossing.base.BookCrossingBaseTests;
+import io.github.enkarin.bookcrossing.base.BookCrossingBaseTest;
 import io.github.enkarin.bookcrossing.support.TestDataProvider;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-class InfoUsersDtoTest extends BookCrossingBaseTests {
+class InfoUsersDtoTest extends BookCrossingBaseTest {
 
     @Test
     void fromUserDtoShouldWorkWithLoginDate() {

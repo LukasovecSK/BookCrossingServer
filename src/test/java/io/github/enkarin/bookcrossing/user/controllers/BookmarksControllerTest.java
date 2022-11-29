@@ -1,6 +1,6 @@
 package io.github.enkarin.bookcrossing.user.controllers;
 
-import io.github.enkarin.bookcrossing.base.BookCrossingBaseTests;
+import io.github.enkarin.bookcrossing.base.BookCrossingBaseTest;
 import io.github.enkarin.bookcrossing.books.dto.BookModelDto;
 import io.github.enkarin.bookcrossing.support.TestDataProvider;
 import io.github.enkarin.bookcrossing.user.service.BookmarksService;
@@ -12,7 +12,7 @@ import org.springframework.test.web.reactive.server.WebTestClient;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-class BookmarksControllerTest extends BookCrossingBaseTests {
+class BookmarksControllerTest extends BookCrossingBaseTest {
 
     @Autowired
     private BookmarksService bookmarksService;

@@ -1,6 +1,6 @@
 package io.github.enkarin.bookcrossing.refresh.service;
 
-import io.github.enkarin.bookcrossing.base.BookCrossingBaseTests;
+import io.github.enkarin.bookcrossing.base.BookCrossingBaseTest;
 import io.github.enkarin.bookcrossing.exception.RefreshTokenInvalidException;
 import io.github.enkarin.bookcrossing.exception.TokenNotFoundException;
 import io.github.enkarin.bookcrossing.exception.UserNotFoundException;
@@ -15,7 +15,7 @@ import java.util.UUID;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
-class RefreshServiceTest extends BookCrossingBaseTests {
+class RefreshServiceTest extends BookCrossingBaseTest {
 
     @Autowired
     private RefreshService refreshService;

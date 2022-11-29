@@ -1,6 +1,6 @@
 package io.github.enkarin.bookcrossing.books.controllers;
 
-import io.github.enkarin.bookcrossing.base.BookCrossingBaseTests;
+import io.github.enkarin.bookcrossing.base.BookCrossingBaseTest;
 import io.github.enkarin.bookcrossing.books.dto.BookFiltersRequest;
 import io.github.enkarin.bookcrossing.books.dto.BookModelDto;
 import io.github.enkarin.bookcrossing.books.service.BookService;
@@ -15,7 +15,7 @@ import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-class BookControllerTest extends BookCrossingBaseTests {
+class BookControllerTest extends BookCrossingBaseTest {
 
     @Autowired
     private BookService bookService;

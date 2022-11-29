@@ -1,6 +1,6 @@
 package io.github.enkarin.bookcrossing.chat.controllers;
 
-import io.github.enkarin.bookcrossing.base.BookCrossingBaseTests;
+import io.github.enkarin.bookcrossing.base.BookCrossingBaseTest;
 import io.github.enkarin.bookcrossing.chat.dto.MessageDto;
 import io.github.enkarin.bookcrossing.chat.dto.MessagePutRequest;
 import io.github.enkarin.bookcrossing.chat.dto.MessageRequest;
@@ -15,7 +15,7 @@ import org.springframework.test.web.reactive.server.WebTestClient;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-class MessageControllerTest extends BookCrossingBaseTests {
+class MessageControllerTest extends BookCrossingBaseTest {
 
     @Autowired
     private CorrespondenceService correspondenceService;

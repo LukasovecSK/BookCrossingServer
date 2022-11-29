@@ -1,6 +1,6 @@
 package io.github.enkarin.bookcrossing.user.service;
 
-import io.github.enkarin.bookcrossing.base.BookCrossingBaseTests;
+import io.github.enkarin.bookcrossing.base.BookCrossingBaseTest;
 import io.github.enkarin.bookcrossing.exception.EmailFailedException;
 import io.github.enkarin.bookcrossing.exception.InvalidPasswordException;
 import io.github.enkarin.bookcrossing.exception.LoginFailedException;
@@ -22,7 +22,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
 
-class UserServiceTest extends BookCrossingBaseTests {
+class UserServiceTest extends BookCrossingBaseTest {
     private static final int GM_TIME_ZERO = 0;
 
     @Test

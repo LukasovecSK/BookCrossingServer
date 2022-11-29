@@ -1,11 +1,11 @@
 package io.github.enkarin.bookcrossing.user.controllers;
 
-import io.github.enkarin.bookcrossing.base.BookCrossingBaseTests;
+import io.github.enkarin.bookcrossing.base.BookCrossingBaseTest;
 import io.github.enkarin.bookcrossing.support.TestDataProvider;
 import io.github.enkarin.bookcrossing.user.dto.UserPasswordDto;
 import org.junit.jupiter.api.Test;
 
-class PasswordResetControllerTest extends BookCrossingBaseTests {
+class PasswordResetControllerTest extends BookCrossingBaseTest {
 
     @Test
     void sendMessageShouldFailWithUserNotFound() {

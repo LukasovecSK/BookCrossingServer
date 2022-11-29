@@ -28,7 +28,7 @@ import java.util.stream.Collectors;
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @ActiveProfiles("test")
 @ContextConfiguration(initializers = MySQLInitializer.class)
-public abstract class BookCrossingBaseTests {
+public abstract class BookCrossingBaseTest {
 
     private final List<Integer> usersId = new ArrayList<>(2);
 
