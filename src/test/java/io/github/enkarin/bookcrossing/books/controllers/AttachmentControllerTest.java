@@ -63,6 +63,7 @@ class AttachmentControllerTest {
         Mockito.when(this.attachmentService.saveAttachment(attachmentMultipartDto, USER_NAME)).thenThrow(AttachmentNotFoundException.class);
 
         Assertions.assertThrows(AttachmentNotFoundException.class, () ->  this.attachmentController.saveAttachment(attachmentMultipartDto , this.principal));
+        Mockito.verify(this.attachmentService).saveAttachment(attachmentMultipartDto, USER_NAME);
     }
 
     @Test
@@ -72,16 +73,26 @@ class AttachmentControllerTest {
         Mockito.when(this.attachmentService.saveAttachment(attachmentMultipartDto, USER_NAME)).thenThrow(BadRequestException.class);
 
         Assertions.assertThrows(BadRequestException.class, () ->  this.attachmentController.saveAttachment(attachmentMultipartDto , this.principal));
+        Mockito.verify(this.attachmentService).saveAttachment(attachmentMultipartDto, USER_NAME);
     }
 
     @Test
-    void testDeleteAttachment201() {
+    void testDeleteAttachment200() {
         final int bookId = 123;
 
         final ResponseEntity<Void> response = this.attachmentController.deleteAttachment(bookId , this.principal);
 
         Mockito.verify(this.attachmentService).deleteAttachment(bookId, USER_NAME);
-
         Assertions.assertEquals(200, response.getStatusCodeValue());
+    }
+
+    @Test
+    void testDeleteAttachment404() {
+        final int bookId = 123;
+
+        Mockito.doThrow(AttachmentNotFoundException.class).when(this.attachmentService).deleteAttachment(bookId, USER_NAME);
+
+        Assertions.assertThrows(AttachmentNotFoundException.class, () -> this.attachmentController.deleteAttachment(bookId , this.principal));
+        Mockito.verify(this.attachmentService).deleteAttachment(bookId, USER_NAME);
     }
 }
